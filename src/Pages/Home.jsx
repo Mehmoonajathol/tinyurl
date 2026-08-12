@@ -24,7 +24,7 @@ function Home() {
       setLoading(true);
 
       const response = await axios.post(
-        "https://mvc1-production.up.railway.app/save",
+       "https://mvc1-production-c4c7.up.railway.app/save",
         {
           longUrl: longUrl
         }
