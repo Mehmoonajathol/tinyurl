@@ -22,13 +22,12 @@ function Home() {
     try {
 
       setLoading(true);
-
-      const response = await axios.post(
-       "https://mvc1-production-9e24.up.railway.app//save",
-        {
-          longUrl: longUrl
-        }
-      );
+const response = await axios.post(
+  "https://mvc1-production-9e24.up.railway.app/save",
+  {
+    longUrl: longUrl,
+  }
+);
 
 
       setShortURL(response.data.shortURL);
